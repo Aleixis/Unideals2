@@ -10,6 +10,9 @@ app.use(cors({ origin: true, credentials: true }));
 
 const stripe = require("stripe")("sk_test_51OBjICLeBQEWi3hthAiWaiu6V47yf2mxmw3YXT8qiX0hhzZkDxWsyAJqu3fvezmLofoOd561eSma8lgDZc2KAhs900KnTlmE87");
 
+const authRoutes = require('./authRoutes');
+app.use('/', authRoutes); 
+
 app.post("http://localhost:4200/checkout", async (req, res, next) => {
     try {
         const session = await stripe.checkout.sessions.create({
