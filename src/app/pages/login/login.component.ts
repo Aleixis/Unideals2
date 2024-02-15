@@ -51,7 +51,7 @@ onLogin() {
     error: (error) => {
       console.error('Login failed', error);
       alert('Wrong password or Email');
-    }
+    }//send the fail log in file to logfile
   });
 }
 
