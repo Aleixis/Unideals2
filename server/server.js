@@ -13,7 +13,7 @@ const stripe = require("stripe")("sk_test_51OBjICLeBQEWi3hthAiWaiu6V47yf2mxmw3YX
 const authRoutes = require('./authRoutes');
 app.use('/', authRoutes); 
 
-app.post("http://localhost:4200/checkout", async (req, res, next) => {
+app.post("/checkout", async (req, res, next) => {
     try {
         const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
@@ -86,4 +86,4 @@ app.post("http://localhost:4200/checkout", async (req, res, next) => {
     }
 });
 
-app.listen(4200, () => console.log('app is running on 4200'));
+app.listen(3000, () => console.log('Server is running on port 3000'));

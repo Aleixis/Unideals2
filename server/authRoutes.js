@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const pool = require('./db'); //assume you have already set the db.js
 
 router.post('/login', async (req, res) => {
+  res.json({ message: 'Login route is working' });
   // get username and password
   const { email, password } = req.body;
   
