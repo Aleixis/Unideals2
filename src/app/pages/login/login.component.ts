@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../auth.service'; 
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,30 +16,43 @@ signupObj:any = {
 };
 
 loginObj:any = {
-  username: '',
+  email: '',
   password:''
-}
-
-onSignUp(){
-this.signupUsers.push(this.signupObj);
-localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers));
-this.signupObj= {
-  username: '',
-  email:'', 
-  password: ''
 };
 
+constructor(private authService: AuthService, private router: Router) {}
+
+onSignUp() {
+  this.authService.signUp(this.signupObj.username,this.signupObj.email,this.signupObj.password).subscribe({
+    next: (response) => {
+      alert('Registration successful');
+      
+      this.signupObj = { username: '', email: '', password: '' };
+      this.router.navigate(['/home']);
+    },
+    error: (error) => {
+      console.error('Registration failed', error);
+      alert('Registration failed');
+    }
+  });
 }
 
 
-onLogin(){
-const isUserExist = this.signupUsers.find(m => m.email==this.loginObj.email && m.password==this.loginObj.password);
-if(isUserExist !== undefined){
-  alert('User login in successfully!)');
-}
-else{
-  alert('Wrong password or email')
-}
+onLogin() {
+  this.authService.login(this.loginObj.email,this.loginObj.password).subscribe({
+    next: (response) => {
+      alert('User logged in successfully!');
+      localStorage.setItem('token', response.token); 
+      
+      this.loginObj = { email: '', password: '' };
+      this.router.navigate(['/home']);
+
+    },
+    error: (error) => {
+      console.error('Login failed', error);
+      alert('Wrong password or Email');
+    }
+  });
 }
 
   ngOnInit(): void {

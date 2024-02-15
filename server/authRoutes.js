@@ -1,18 +1,18 @@
 // authRoutes.js
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const pool = require('./db'); //assume you have already set the db.js
 
 router.post('/login', async (req, res) => {
-  // get Email and password
-  const { Email, password } = req.body;
+  // get username and password
+  const { email, password } = req.body;
   
   // check whether the user in database or not
   const client = await pool.connect();
   try {
-    const userResult = await client.query('SELECT * FROM users WHERE Email = $1', [Email]);
+    const userResult = await client.query('SELECT * FROM User WHERE email = $1', [email]);
     const user = userResult.rows[0];
     client.release();
 
@@ -21,8 +21,8 @@ router.post('/login', async (req, res) => {
     }
 
     // check the password is correct
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
+    //const isMatch = await bcrypt.compare(password, user.password);
+    if (password !== user.password) {
       return res.status(401).json({ error: 'Invalid password' });
     }
 
