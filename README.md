@@ -1,10 +1,31 @@
-# Store
+# UniDeals
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
 
-## Development server
+## How to setup UniDeals website
+0. Before installing the project, make sure you have installed Angular CLI and Node.js. Then, execute the following command to install project dependencies:`$ npm install`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The dependencies for this project are as follows:
+
+Node.js (>=12.x)
+
+Express (>=4.18.1)
+
+Jsonwebtoken (>=9.0.2)
+
+Pg (>=8.11.3)
+
+Stripe (>=10.7.0)
+
+Also, make sure you have run the database file (see server/UniDeals.sql) on your own database. In the file (server/db.js), you need to change your database user, host, and password.
+
+1. Run `ng serve` for a development server for Angular. Then navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
+
+2. Open a new terminal and navigate to the root folder of the server by using `cd server`. Then, run `node server.js` to start the Node.js server.
+
+
+Now you should be able to view the project.
+
 
 ## Code scaffolding
 
