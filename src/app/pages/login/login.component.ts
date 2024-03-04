@@ -59,8 +59,7 @@ onLogin() {
     const localData = localStorage.getItem('signUpUsers');
     if(localData !=null){
       this.signupUsers=JSON.parse(localData);
-    }
-    
+    }  
   }
 
 }
