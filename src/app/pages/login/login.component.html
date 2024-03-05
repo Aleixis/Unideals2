@@ -20,11 +20,11 @@
 			</div>
 
 			<div class="login">
-				<form>
+				<form (ngSubmit)="onLogin()">
 					<label for="chk" aria-hidden="true">Login</label>
 					<input type="email" name="email" placeholder="Email" required="" [(ngModel)]="loginObj.email">
 					<input type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="loginObj.password">
-					<button (click)="onLogin()">Login</button>
+					<button type="submit">Login</button>
 				</form>
 			</div>
 	</div>

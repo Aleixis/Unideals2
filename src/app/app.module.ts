@@ -33,6 +33,7 @@ import { IntroductionComponent } from './pages/introduction/introduction.compone
 import { LeaderComponent } from './pages/leader/leader.component';
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
+//import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { LoginComponent } from './pages/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    //NoopAnimationsModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -67,7 +69,8 @@ import { LoginComponent } from './pages/login/login.component';
     MatSnackBarModule,
     HttpClientModule,
     MatTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
     
 
 
