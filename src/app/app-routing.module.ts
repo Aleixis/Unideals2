@@ -7,6 +7,8 @@ import { LeaderComponent } from './pages/leader/leader.component';
 import { ItemComponent } from './pages/item/item.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
+import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
+
 
 const routes: Routes = [
   {
@@ -37,7 +39,11 @@ const routes: Routes = [
 {
   path:'leader',
   component:LeaderComponent
+},
 
+{
+  path:'leader/leaderapply',
+  component:LeaderapplyComponent
 },
 
 {

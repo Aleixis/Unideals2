@@ -31,9 +31,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
 import { LeaderComponent } from './pages/leader/leader.component';
+import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
-//import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { LoginComponent } from './pages/login/login.component';
     CartComponent,
     IntroductionComponent,
     LeaderComponent,
+    LeaderapplyComponent,
     ItemComponent,
     LoginComponent
   ],
@@ -54,7 +56,6 @@ import { LoginComponent } from './pages/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    //NoopAnimationsModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -70,9 +71,7 @@ import { LoginComponent } from './pages/login/login.component';
     HttpClientModule,
     MatTooltipModule,
     ReactiveFormsModule,
-    
-    
-
+  
 
   ],
   providers: [CartService, StoreService],
