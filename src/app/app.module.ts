@@ -32,8 +32,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
 import { LeaderComponent } from './pages/leader/leader.component';
 import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
+import { LeaderconfirmComponent } from './pages/leader/leaderconfirm/leaderconfirm.component';
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -48,6 +51,7 @@ import { LoginComponent } from './pages/login/login.component';
     IntroductionComponent,
     LeaderComponent,
     LeaderapplyComponent,
+    LeaderconfirmComponent,
     ItemComponent,
     LoginComponent
   ],
@@ -71,6 +75,7 @@ import { LoginComponent } from './pages/login/login.component';
     HttpClientModule,
     MatTooltipModule,
     ReactiveFormsModule,
+    MatDialogModule
   
 
   ],
