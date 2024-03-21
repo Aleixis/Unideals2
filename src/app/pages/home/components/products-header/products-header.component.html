@@ -1,0 +1,72 @@
+<mat-card clss="mb-4">
+  <div class="flex justify-between">
+    <!-- <div>
+      <button mat-button [matMenuTriggerFor]="sortByMenu" style="flex-direction: row-reverse;">
+       <!-- Sort by {{sort}}-->
+        <!--Sort by Asc or Desc
+        <mat-icon>expand_more</mat-icon>
+
+      </button>
+
+      <mat-menu #sortByMenu="matMenu">
+        <button (click)="onSortUpdated('desc')" mat-menu-item>desc</button>
+        <button (click)="onSortUpdated('asc')" mat-menu-item>asc</button>
+        <button (click)="onSortUpdated('desc')" mat-menu-item>Desc</button>
+        <button (click)="onSortUpdated('asc')" mat-menu-item>Asc</button>
+
+      </mat-menu>
+    </div>-->
+
+    
+
+<button routerLink="/introduction" mat-button style="color:rgb(20, 141, 20)">Home</button>
+
+
+<button routerLink="/home" mat-button style="color:darkorange">Shop</button>
+
+
+<button routerLink="/leader" mat-button style="color:firebrick">Leader</button>
+
+
+
+
+   <div class="flex items-center">
+       <!--<div>
+        <button mat-button [matMenuTriggerFor]="menu" style="flex-direction: row-reverse;">
+          Show {{ itemsShowCount }}
+          
+          <mat-icon>expand_more</mat-icon>
+          
+        </button>
+        
+        <mat-menu #menu="matMenu">
+          <button (click)="onItemsUpdated(12)" mat-menu-item>12</button>
+          <button (click)="onItemsUpdated(24)" mat-menu-item>24</button>
+          <button (click)="onItemsUpdated(36)" mat-menu-item>36</button>
+
+        </mat-menu>
+      </div>-->
+
+
+      <button (click)="onColumnsUpdated(1)">
+        <mat-icon>view_list</mat-icon>
+      </button>
+
+      <button (click)="onColumnsUpdated(3)">
+        <mat-icon>view_module</mat-icon>
+      </button>
+
+      <button (click)="onColumnsUpdated(4)">
+        <mat-icon>view_comfy</mat-icon>
+      </button>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</mat-card>

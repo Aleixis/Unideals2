@@ -1,0 +1,58 @@
+<mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
+  <a routerLink="home" style="color: black; text-decoration: none;">Unideals</a> 
+
+  <div><button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Check your cart">
+    <mat-icon  
+      [matBadge]="itemsQuantity"
+      [matBadgeHidden]="!itemsQuantity" 
+      matBadgeColor="warn"
+    >shopping_cart</mat-icon> 
+  </button>
+
+  <button mat-icon-button matTooltip="Login"><mat-icon>account_circle</mat-icon>
+</button>
+
+  <!--<button (click)= "onBecomeLeader()">
+    <mat-icon >directions_car</mat-icon>
+  </button>-->
+</div>
+  
+
+  <mat-menu #menu="matMenu">
+    <div class="p-3 civide-y divide-solid">
+      <div class="pb-3 flex justify-between">
+        <span class="mr-16">{{itemsQuantity}} Items</span>
+        <a routerLink="cart">View Cart</a>
+      </div>
+
+      <div *ngIf="cart.items.length" class="py-3">
+        <div 
+        *ngFor ="let item of cart.items"
+        
+        class="flex justify-between font-light mb-2">
+          {{item.name}} x {{item.quantity}}
+          <span class="font-bold">{{item.price | currency }}</span> 
+        </div>
+      </div>
+    
+      <div class="felx justify-between py-3 font-light">
+        Total:
+        <span class="font-bold">{{getTotal(cart.items)|currency}}</span>
+      </div>
+
+      <div class="pt-3 flex justify-between">
+
+        <button matTooltip="Clear your cart"
+        (click)="onClearCart()"
+        class="bg-stone-300 text-black rounded">
+          Remove All
+        </button>
+
+        <button routerLink="cart" class=" bg-black text-white rounded" matTooltip="Go to my cart">
+          Checkout
+        </button>
+      </div>
+
+    </div>
+  </mat-menu>
+</mat-toolbar>
