@@ -1,0 +1,172 @@
+
+.pricing-info {
+  font-family: Arial, sans-serif;
+  font-size: larger;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.current-price span {
+  font-weight: bold;
+  color: #E53238; /* Red for emphasis */
+}
+
+.savings {
+  color: #008000; /* Green to indicate savings */
+}
+.rating {
+  color: rgb(122, 174, 122);  
+  font-size: 18px;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.unideals-choice {
+  background-color: rgb(122, 174, 122); 
+  color: white;
+  display: inline-block;
+  padding: 3px 7px;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.purchase-count {
+  font-size: 14px;
+  color: #007600; /* Dark green color to indicate purchases */
+}
+.promotion {
+  background-color: #f4f4f4;
+  border-left: 4px solid #E53238; /* Red border for emphasis on promotion */
+  padding: 10px;
+  margin: 10px 0;
+}
+.button-group {
+  margin-top: 20px; /* Or any other spacing you prefer */
+  display: flex;
+  gap: 100px; /* This will create space between buttons */
+}
+
+.btn {
+  padding: 10px 20px; /* Increase padding to make the button larger */
+  border: none; /* Remove the border for a cleaner look */
+  color: white; /* White text color */
+  font-size: 16px; /* Increase font size for better readability */
+  cursor: pointer; /* Change cursor to pointer when over the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary {
+  background-color: #ffa007; /* Bootstrap yellow color for primary button */
+}
+
+.btn-primary:hover {
+  background-color: #e0a800; /* Darker shade of yellow for hover effect */
+}
+
+.btn-secondary {
+  background-color: #ffa007; /* Same yellow color for secondary button */
+}
+
+.btn-secondary:hover {
+  background-color: #e0a800; /* Darker shade of yellow for hover effect */
+}
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  background-color: #f9f9f9;
+  margin-right: 5px;
+}
+
+.active-tab {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.active-content {
+  display: block;
+}
+.product-details {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px; /* or the max-width you desire */
+  margin-left: 0 auto;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  color: #333; /* Adjust the color to match the image */
+  margin-bottom: 10px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.details-list li {
+  margin-bottom: 5px;
+}
+
+.details-list strong {
+  color: #555; /* Adjust the color to match the image */
+}
+
+.product-details p {
+  color: #666; /* Adjust the color to match the image */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.site-footer {
+  background-color: #242424; /* Dark background color */
+  color: #ffffff; /* Text color */
+  padding: 40px 0; /* Top and bottom padding */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-around; /* Distribute columns evenly */
+  max-width: 1200px; /* Max width of the footer content */
+  margin: auto; /* Center the footer content */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  margin-bottom: 20px; /* Space below the column header */
+}
+
+.footer-column ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-column ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none; /* No underline */
+  margin-bottom: 10px; /* Space between links */
+  display: block; /* Make the links block to occupy full width */
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+

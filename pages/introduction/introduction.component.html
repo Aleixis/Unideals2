@@ -1,0 +1,54 @@
+<div class="whole">
+<mat-card clss="mb-4">
+  <div class="flex justify-between">
+   
+    
+
+<button routerLink="/introduction" mat-button style="color:rgb(20, 141, 20)">Home</button>
+
+
+<button routerLink="/home" mat-button style="color:darkorange">Shop</button>
+
+<button routerLink="/leader" mat-button style="color:firebrick">Leader</button>
+
+
+  </div>
+</mat-card>
+
+
+<!-- introduction.component.html -->s
+
+<!-- introduction.component.html -->
+
+<section class="intro-container">
+  <div class="intro-content">
+    <h1><b>Welcome to UniDeals!</b></h1>
+    <p style="color:grey;font-style: italic ;">Discover amazing group discounts on a wide range of products.
+    </p>
+    
+  </div>
+
+  
+</section>
+
+<button routerLink="/home"> 
+  <div class="slide">
+  
+    <img [src]="images[currentImageIndex]" alt="Product Image" class="product-image">
+   
+      <p class="description">{{ descriptions[currentImageIndex] }}</p>
+    
+  </div></button>
+
+<button class="exploreButton" routerLink="/home">Explore More</button>
+
+
+
+    <p style="color:rgb(150, 209, 144);font-style: italic; margin-left: 2px; margin-right: 2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">At UniDeals, we invite you to embark on an unparalleled shopping experience where incredible savings meet a diverse array of products. Unveil a world of unbeatable group discounts, meticulously curated to elevate your shopping journey
+    </p>
+    
+
+
+<p [ngClass]="'my-10 logo'">©UniDeals</p>
+
+</div>
