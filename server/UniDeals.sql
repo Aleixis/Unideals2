@@ -13,7 +13,9 @@ CREATE TABLE Product (
     ProductName VARCHAR(100),
     Price DECIMAL(10, 2),
     StockQuantity INT,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ProductImg BYTEA
+    
 );
 
 -- create Order table
@@ -28,3 +30,4 @@ CREATE TABLE "Order" (
 
 INSERT INTO "User" (Username, Password, Email) VALUES
 ('Ying', 'yingtu123', 'tu000021@algonquinlive.com')
+

@@ -31,11 +31,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
 import { LeaderComponent } from './pages/leader/leader.component';
-import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
-import { LeaderconfirmComponent } from './pages/leader/leaderconfirm/leaderconfirm.component';
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';  
+import { AccountComponent } from './pages/account/account.component';
+import { SidenavComponent } from './pages/sidenav/sidenav.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BodyComponent } from './pages/body/body.component';
+import { HelpComponent } from './pages/help/help.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { PromotionsComponent } from './pages/promotions/promotions.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 
 
@@ -50,16 +56,24 @@ import { MatDialogModule } from '@angular/material/dialog';
     CartComponent,
     IntroductionComponent,
     LeaderComponent,
-    LeaderapplyComponent,
-    LeaderconfirmComponent,
     ItemComponent,
-    LoginComponent
+    LoginComponent,
+    AccountComponent,
+    SidenavComponent,
+    DashboardComponent,
+    BodyComponent,
+    HelpComponent,
+    OrdersComponent,
+    PromotionsComponent,
+    SettingsComponent
+    
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    //NoopAnimationsModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -75,8 +89,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     HttpClientModule,
     MatTooltipModule,
     ReactiveFormsModule,
-    MatDialogModule
-  
+    NoopAnimationsModule
+    
+    
+
 
   ],
   providers: [CartService, StoreService],

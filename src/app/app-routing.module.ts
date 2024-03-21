@@ -7,7 +7,13 @@ import { LeaderComponent } from './pages/leader/leader.component';
 import { ItemComponent } from './pages/item/item.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
-import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
+import { AccountComponent } from './pages/account/account.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { PromotionsComponent } from './pages/promotions/promotions.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { HelpComponent } from './pages/help/help.component';
+import { BodyComponent } from './pages/body/body.component';
 
 
 const routes: Routes = [
@@ -20,6 +26,13 @@ const routes: Routes = [
 {
   path:'cart',
   component:CartComponent
+
+},
+
+
+{
+  path:'dashboard',
+  component:DashboardComponent
 
 },
 
@@ -39,11 +52,7 @@ const routes: Routes = [
 {
   path:'leader',
   component:LeaderComponent
-},
 
-{
-  path:'leader/leaderapply',
-  component:LeaderapplyComponent
 },
 
 {
@@ -56,6 +65,35 @@ const routes: Routes = [
   component:LoginComponent
 
 },
+
+
+{
+  path:'account',
+  component:AccountComponent
+
+},
+
+{
+  path:'orders',
+  component:OrdersComponent
+
+},
+{
+  path:'promotions',
+  component:PromotionsComponent
+
+},
+{
+  path:'settings',
+  component:SettingsComponent
+
+},
+{
+  path:'help',
+  component:HelpComponent
+
+},
+
 {
   path:'',redirectTo:'login', pathMatch:'full'
 }];
