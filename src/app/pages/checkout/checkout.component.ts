@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
-  styleUrls: ['/checkout.css'
+  styleUrls: ['checkout.css'
   ]
 })
 export class CheckoutComponent {
