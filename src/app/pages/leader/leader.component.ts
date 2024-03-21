@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
-import { LeaderconfirmComponent } from './leaderconfirm/leaderconfirm.component';
-
 
 @Component({
   selector: 'app-leader',
@@ -10,20 +6,6 @@ import { LeaderconfirmComponent } from './leaderconfirm/leaderconfirm.component'
   styles: [
   ]
 })
-
-
 export class LeaderComponent {
-  constructor(private dialog: MatDialog, private router: Router) {}
 
-  openConfirmationDialog(): void {
-    const dialogRef = this.dialog.open(LeaderconfirmComponent, {
-      width: '250px',
-      data: 'Do you want to join?'
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result === 'yes') {
-        this.router.navigate(['/leader']);
-      }
-    });
-}}
+}
