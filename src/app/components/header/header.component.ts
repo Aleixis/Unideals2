@@ -1,10 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Cart, CartItem } from 'src/app/models/cart.model';
 import { CartService } from 'src/app/services/cart.service';
-<<<<<<< HEAD
-=======
 import { Router } from '@angular/router';
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
 @Component({
   selector: 'app-header',
@@ -13,20 +10,12 @@ import { Router } from '@angular/router';
   ]
 })
 export class HeaderComponent {
-<<<<<<< HEAD
-=======
-  
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
-  [x: string]: any;
+
+    [x: string]: any;
 
   private _cart:Cart= {items:[]};
   itemsQuantity = 0;
 
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
   @Input()
   get cart():Cart{
     return this._cart;
@@ -39,11 +28,8 @@ export class HeaderComponent {
     .map((item) =>item.quantity).reduce((prev,current) =>prev+current,0);
   }
 
-<<<<<<< HEAD
-  constructor(private cartService:CartService){
-=======
+
   constructor(private cartService:CartService ,private router: Router){
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
   
   }
   getTotal(items:Array<CartItem>):number{
@@ -56,14 +42,12 @@ export class HeaderComponent {
   }
 
 
-<<<<<<< HEAD
-=======
+
   onAccount(): void {
    this.router.navigateByUrl('/account');
   }
 
 
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
   onBecomeLeader():void{
     // Replace 'https://example.com' with the user leader website.
     const externalWebsiteUrl = 'https://example.com';

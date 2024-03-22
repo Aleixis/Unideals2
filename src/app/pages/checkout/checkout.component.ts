@@ -3,11 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
-<<<<<<< HEAD
   styleUrls: ['checkout.css'
-=======
-  styleUrls: ['/checkout.css'
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
+
   ]
 })
 export class CheckoutComponent {

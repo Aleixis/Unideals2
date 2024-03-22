@@ -7,9 +7,8 @@ import { LeaderComponent } from './pages/leader/leader.component';
 import { ItemComponent } from './pages/item/item.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
-<<<<<<< HEAD
 import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
-=======
+
 import { AccountComponent } from './pages/account/account.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { OrdersComponent } from './pages/orders/orders.component';
@@ -17,7 +16,6 @@ import { PromotionsComponent } from './pages/promotions/promotions.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { HelpComponent } from './pages/help/help.component';
 import { BodyComponent } from './pages/body/body.component';
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
 
 const routes: Routes = [
@@ -33,8 +31,6 @@ const routes: Routes = [
 
 },
 
-<<<<<<< HEAD
-=======
 
 {
   path:'dashboard',
@@ -42,7 +38,6 @@ const routes: Routes = [
 
 },
 
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 {
   path:'introduction',
   component:IntroductionComponent
@@ -59,15 +54,13 @@ const routes: Routes = [
 {
   path:'leader',
   component:LeaderComponent
-<<<<<<< HEAD
+
 },
 
 {
   path:'leader/leaderapply',
   component:LeaderapplyComponent
-=======
 
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 },
 
 {
@@ -80,9 +73,6 @@ const routes: Routes = [
   component:LoginComponent
 
 },
-<<<<<<< HEAD
-=======
-
 
 {
   path:'account',
@@ -111,7 +101,6 @@ const routes: Routes = [
 
 },
 
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 {
   path:'',redirectTo:'login', pathMatch:'full'
 }];

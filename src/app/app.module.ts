@@ -31,13 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
 import { LeaderComponent } from './pages/leader/leader.component';
-<<<<<<< HEAD
 import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
 import { LeaderconfirmComponent } from './pages/leader/leaderconfirm/leaderconfirm.component';
-import { ItemComponent } from './pages/item/item.component';
-import { LoginComponent } from './pages/login/login.component';
 import { MatDialogModule } from '@angular/material/dialog';
-=======
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';  
@@ -49,7 +45,6 @@ import { HelpComponent } from './pages/help/help.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { PromotionsComponent } from './pages/promotions/promotions.component';
 import { SettingsComponent } from './pages/settings/settings.component';
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
 
 
@@ -64,12 +59,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
     CartComponent,
     IntroductionComponent,
     LeaderComponent,
-<<<<<<< HEAD
     LeaderapplyComponent,
     LeaderconfirmComponent,
-    ItemComponent,
-    LoginComponent
-=======
     ItemComponent,
     LoginComponent,
     AccountComponent,
@@ -81,17 +72,12 @@ import { SettingsComponent } from './pages/settings/settings.component';
     PromotionsComponent,
     SettingsComponent
     
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-<<<<<<< HEAD
-=======
-    //NoopAnimationsModule,
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
@@ -107,15 +93,11 @@ import { SettingsComponent } from './pages/settings/settings.component';
     HttpClientModule,
     MatTooltipModule,
     ReactiveFormsModule,
-<<<<<<< HEAD
-    MatDialogModule
-  
-=======
+    MatDialogModule,
     NoopAnimationsModule
     
     
 
->>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
   ],
   providers: [CartService, StoreService],
