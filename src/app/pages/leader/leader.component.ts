@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { LeaderconfirmComponent } from './leaderconfirm/leaderconfirm.component';
 
+=======
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
 @Component({
   selector: 'app-leader',
@@ -10,6 +13,7 @@ import { LeaderconfirmComponent } from './leaderconfirm/leaderconfirm.component'
   styles: [
   ]
 })
+<<<<<<< HEAD
 
 
 export class LeaderComponent {
@@ -27,3 +31,8 @@ export class LeaderComponent {
       }
     });
 }}
+=======
+export class LeaderComponent {
+
+}
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6

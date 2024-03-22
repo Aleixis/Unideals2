@@ -3,6 +3,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { Cart } from './models/cart.model';
 import { CartService } from './services/cart.service';
 
+<<<<<<< HEAD
+=======
+interface SideNavToggle{
+  screenWidth: number;
+  collapsed:boolean;
+
+}
+
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 @Component({
   selector: 'app-root',
   template: ` 
@@ -25,6 +34,19 @@ constructor(private cartService:CartService){}
       this.cart =_cart;
     })
   }
+<<<<<<< HEAD
 
   
 }
+=======
+  isSideNavCollapsed = false;
+  screenWidth =0;
+  
+  onToggleSideNav(data:SideNavToggle):void{
+  this.screenWidth=data.screenWidth;
+  this.isSideNavCollapsed=data.collapsed;
+}
+
+
+}
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6

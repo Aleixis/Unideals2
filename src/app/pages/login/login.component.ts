@@ -45,7 +45,11 @@ onLogin() {
       localStorage.setItem('token', response.token); 
       
       this.loginObj = { email: '', password: '' };
+<<<<<<< HEAD
       this.router.navigate(['home']);
+=======
+      this.router.navigate(['/home']);
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 
     },
     error: (error) => {

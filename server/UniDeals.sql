@@ -13,7 +13,13 @@ CREATE TABLE Product (
     ProductName VARCHAR(100),
     Price DECIMAL(10, 2),
     StockQuantity INT,
+<<<<<<< HEAD
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+=======
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ProductImg BYTEA
+    
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
 );
 
 -- create Order table
@@ -27,4 +33,9 @@ CREATE TABLE "Order" (
 );
 
 INSERT INTO "User" (Username, Password, Email) VALUES
+<<<<<<< HEAD
 ('Ying', 'yingtu123', 'tu000021@algonquinlive.com')
+=======
+('Ying', 'yingtu123', 'tu000021@algonquinlive.com')
+
+>>>>>>> b5676b5c67b9e4c0e4c2d01490f0533b4a176bf6
