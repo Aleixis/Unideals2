@@ -1,85 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Group Buying Leader Application Form</title>
-<link rel="stylesheet" type="text/css" href="leaderapply.component.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Buying Leader Application Form</title>
+    <link rel="stylesheet" type="text/css" href="leaderapply.component.css" />
+  </head>
+  <body>
+    <h1>Do you want to join us and be a Group Buying Leader?</h1>
 
-</head>
-<body>
+    <form
+      (ngSubmit)="submitApplication()"
+      action="/submit-application"
+      method="post"
+    >
+      <section>
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required /><br />
 
-<h1>Do you want to join us and be a Group Buying Leader?</h1>
+        <label for="contactNumber">Contact Number:</label>
+        <input
+          type="tel"
+          id="contactNumber"
+          name="contactNumber"
+          required
+        /><br />
 
-<form (ngSubmit)="submitApplication()" action="/submit-application" method="post" >
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required /><br />
+      </section>
 
-  <section>
-    <h2>Personal Information</h2>
-    <label for="fullName">Full Name:</label>
-    <input type="text" id="fullName" name="fullName" required><br>
+      <section>
+        <h2>Vehicle & Storage Information</h2>
+        <label>Do you have access to a reliable vehicle?</label>
+        <input
+          type="radio"
+          id="vehicleYes"
+          name="vehicleAccess"
+          value="yes"
+          required
+        />
+        Yes
+        <input type="radio" id="vehicleNo" name="vehicleAccess" value="no" />
+        No<br />
 
-    <label for="contactNumber">Contact Number:</label>
-    <input type="tel" id="contactNumber" name="contactNumber" required><br>
+        <label for="vehicleMakeModel">Vehicle Make & Model:</label>
+        <input
+          type="text"
+          id="vehicleMakeModel"
+          name="vehicleMakeModel"
+        /><br />
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required><br>
-  </section>
+        <label>Do you have adequate(at least 6 x 8 ft) storage space?</label>
+        <input
+          type="radio"
+          id="storageYes"
+          name="storageSpace"
+          value="yes"
+          required
+        />
+        Yes
+        <input type="radio" id="storageNo" name="storageSpace" value="no" />
+        No<br />
 
-  <section>
-    <h2>Vehicle & Storage Information</h2>
-    <label>Do you have access to a reliable vehicle?</label>
-    <input type="radio" id="vehicleYes" name="vehicleAccess" value="yes" required> Yes
-    <input type="radio" id="vehicleNo" name="vehicleAccess" value="no"> No<br>
+        <label for="storageDescription"
+          >Describe your storage facilities:</label
+        >
+        <textarea
+          id="storageDescription"
+          name="storageDescription"
+          required
+        ></textarea
+        ><br />
+      </section>
 
-    <label for="vehicleMakeModel">Vehicle Make & Model:</label>
-    <input type="text" id="vehicleMakeModel" name="vehicleMakeModel"><br>
+      <section>
+        <h2>Availability</h2>
+        <label>Are you available on weekends?</label>
+        <input
+          type="radio"
+          id="weekendsYes"
+          name="weekendsAvailable"
+          value="yes"
+          required
+        />
+        Yes
+        <input
+          type="radio"
+          id="weekendsNo"
+          name="weekendsAvailable"
+          value="no"
+        />
+        No<br />
 
-    <label>Do you have adequate(at least 6 x 8 ft) storage space?</label>
-    <input type="radio" id="storageYes" name="storageSpace" value="yes" required> Yes
-    <input type="radio" id="storageNo" name="storageSpace" value="no"> No<br>
+        <label for="hoursWeekly">How many hours can you commit weekly?</label>
+        <input
+          type="number"
+          id="hoursWeekly"
+          name="hoursWeekly"
+          required
+        /><br />
+      </section>
 
-    <label for="storageDescription">Describe your storage facilities:</label>
-    <textarea id="storageDescription" name="storageDescription" required></textarea><br>
-  </section>
+      <section>
+        <h2>Responsibility and Legal Compliance</h2>
+        <label>Would you be willing to undergo a police record check?</label>
+        <input
+          type="radio"
+          id="felonyYes"
+          name="felonyConviction"
+          value="yes"
+          required
+        />
+        Yes
+        <input type="radio" id="felonyNo" name="felonyConviction" value="no" />
+        No<br />
 
-  <section>
-    <h2>Availability</h2>
-    <label>Are you available on weekends?</label>
-    <input type="radio" id="weekendsYes" name="weekendsAvailable" value="yes" required> Yes
-    <input type="radio" id="weekendsNo" name="weekendsAvailable" value="no"> No<br>
+        <label for="felonyExplanation">If no, please explain:</label>
+        <textarea id="felonyExplanation" name="felonyExplanation"></textarea
+        ><br />
 
-    <label for="hoursWeekly">How many hours can you commit weekly?</label>
-    <input type="number" id="hoursWeekly" name="hoursWeekly" required><br>
-  </section>
+        <label
+          >Do you agree to comply with all transportation and safety
+          regulations?</label
+        >
+        <input
+          type="radio"
+          id="complianceYes"
+          name="legalCompliance"
+          value="yes"
+          required
+        />
+        Yes
+        <input
+          type="radio"
+          id="complianceNo"
+          name="legalCompliance"
+          value="no"
+        />
+        No<br />
+      </section>
 
-  <section>
-    <h2>Responsibility and Legal Compliance</h2>
-    <label>Would you be willing to undergo a police record check?</label>
-    <input type="radio" id="felonyYes" name="felonyConviction" value="yes" required> Yes
-    <input type="radio" id="felonyNo" name="felonyConviction" value="no"> No<br>
+      <section>
+        <h2>Declaration</h2>
+        <p>
+          I hereby declare that the information provided is true and accurate to
+          the best of my knowledge and I understand that any false statements
+          may result in denial of my application or future dismissal.
+        </p>
+        <input type="checkbox" id="declaration" name="declaration" required />I
+        agree
+        <br />
+      </section>
 
-    <label for="felonyExplanation">If no, please explain:</label>
-    <textarea id="felonyExplanation" name="felonyExplanation"></textarea><br>
-
-    <label>Do you agree to comply with all transportation and safety regulations?</label>
-    <input type="radio" id="complianceYes" name="legalCompliance" value="yes" required> Yes
-    <input type="radio" id="complianceNo" name="legalCompliance" value="no"> No<br>
-  </section>
-
-
-
-  <section>
-    <h2>Declaration</h2>
-    <p>
-      I hereby declare that the information provided is true and accurate to the best of my knowledge and I understand that any false statements may result in denial of my application or future dismissal.
-    </p>
-    <input type="checkbox" id="declaration" name="declaration" required>I agree
-    <br>
-  </section>
-
-  <input type="submit" value="Submit Application" >
-
-</form>
-
-</body>
+      <input type="submit" value="Submit Application" />
+    </form>
+  </body>
 </html>
