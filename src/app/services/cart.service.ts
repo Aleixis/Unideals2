@@ -38,7 +38,7 @@ cart = new BehaviorSubject<Cart>({ items:[]});
   clearCart():void{
 
     this.cart.next({ items:[]});
-    this._snackBar.open('Cart is clear', 'ok', {duration:3000});
+    //this._snackBar.open('Cart is clear', 'ok', {duration:3000});
   }
 
   removeFromCart(item:CartItem, update = true):Array<CartItem>{
