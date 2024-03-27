@@ -23,7 +23,7 @@ export class LeaderComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result === 'yes') {
-        this.router.navigate(['/leader']);
+        this.router.navigate(['/promotions']);
       }
     });
 }}

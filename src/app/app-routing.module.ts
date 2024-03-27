@@ -8,7 +8,7 @@ import { ItemComponent } from './pages/item/item.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
-
+import { PaymentComponent } from './pages/payment/payment.component';
 import { AccountComponent } from './pages/account/account.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { OrdersComponent } from './pages/orders/orders.component';
@@ -49,6 +49,11 @@ const routes: Routes = [
   path:'checkout',
   component:CheckoutComponent
 
+},
+
+{
+  path: 'payment', 
+  component: PaymentComponent
 },
 
 {
