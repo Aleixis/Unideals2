@@ -63,7 +63,7 @@
 }
 
 .btn-primary {
-  background-color: #ffa007; /* Bootstrap yellow color for primary button */
+  background-color: #007600; /* Bootstrap yellow color for primary button */
 }
 
 .btn-primary:hover {
@@ -71,7 +71,7 @@
 }
 
 .btn-secondary {
-  background-color: #ffa007; /* Same yellow color for secondary button */
+  background-color: #007600; /* Same yellow color for secondary button */
 }
 
 .btn-secondary:hover {

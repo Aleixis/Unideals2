@@ -18,7 +18,7 @@ export class LeaderComponent {
   openConfirmationDialog(): void {
     const dialogRef = this.dialog.open(LeaderconfirmComponent, {
       width: '250px',
-      data: 'Do you want to join?'
+      data: 'Do you want to lead this group?'
     });
 
     dialogRef.afterClosed().subscribe(result => {
