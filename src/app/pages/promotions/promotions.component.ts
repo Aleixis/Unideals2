@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-promotions',
   templateUrl: './promotions.component.html',
-  styles: ``
+  styleUrls: ['./promotions.component.scss']
 })
 export class PromotionsComponent {
   collapsed: boolean = false;

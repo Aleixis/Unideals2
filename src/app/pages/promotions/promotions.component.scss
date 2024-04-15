@@ -1,0 +1,32 @@
+.dashboard-content{
+    padding-left: 10px;
+  }
+  
+  
+  .card{
+    display:flex;
+    flex-direction:column;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin:1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #e6edef;;
+  
+    .card-head{
+      padding:1rem 1.5rem;
+     border-bottom: 1px solid #edf1f7;
+     font-size: 1rem;
+     font-weight: 600;
+    }
+    .card-body{
+      padding:1rem 1.5rem;
+    }
+  
+  }
+  
+  .date {
+    font-family: Arial, sans-serif; /* Specify the desired font family */
+    font-size: 14px; /* Specify the desired font size */
+    font-weight: bold; /* Specify the desired font weight */
+    color: #333; /* Specify the desired font color */
+  }
+  

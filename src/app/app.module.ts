@@ -33,6 +33,8 @@ import { IntroductionComponent } from './pages/introduction/introduction.compone
 import { LeaderComponent } from './pages/leader/leader.component';
 import { LeaderapplyComponent } from './pages/leader/leaderapply/leaderapply.component';
 import { LeaderconfirmComponent } from './pages/leader/leaderconfirm/leaderconfirm.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { PaymentComponent } from './pages/payment/payment.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ItemComponent } from './pages/item/item.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -61,6 +63,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
     LeaderComponent,
     LeaderapplyComponent,
     LeaderconfirmComponent,
+    PaymentComponent,
+    CheckoutComponent,
     ItemComponent,
     LoginComponent,
     AccountComponent,

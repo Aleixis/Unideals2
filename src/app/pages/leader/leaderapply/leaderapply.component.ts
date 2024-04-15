@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'; 
-import { MatDialog } from '@angular/material/dialog';
-import { LeaderconfirmComponent } from '../leaderconfirm/leaderconfirm.component';
+
 
 @Component({
   selector: 'app-leaderapply',

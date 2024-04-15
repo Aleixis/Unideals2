@@ -10,7 +10,7 @@
 	<meta name="description" content="Checkout Page">
 
 	<!--This is a link to CSS-->
-	<link rel="stylesheet" type="text/css" href="checkout.css">
+	<link rel="stylesheet" type="text/css" href="checkout.component.css">
 
 	<title>Home</title>
 </head>
@@ -20,7 +20,7 @@
 	
 	<header>
 		<h2 
-		>UNIDEAL</h2>
+		>UNIDEALS</h2>
 	</header>
 
 	
@@ -54,22 +54,22 @@
 				<p></p>
 				<ul>
 					<li>
-						<a target="_blank" href="assets/payment.html">
-							<img [src]="theImageUrlVisa"  alt="Item Image" alt="Visa" style="width:80px"> 
+						<a  routerLink="/payment">
+							<img [src]="theImageUrlVisa"  alt="Visa" style="width:80px"> 
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="assets/payment.html">
+						<a routerLink="/payment">
 							<img [src]="theImageUrlMasterCard"  alt="MasterCard" style="width:80px">
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="assets/payment.html">
+						<a routerLink="/payment">
 							<img [src]="theImageUrlPayPal" alt="PayPal" style="width:80px">
 						</a>
 					</li>
 					<li>
-						<a target="_blank" href="assets/payment.html">
+						<a routerLink="/payment">
 							<img [src]="theImageUrlGiftCard"  alt="GiftCard" style="width:80px">
 						</a>
 					</li>
@@ -81,17 +81,13 @@
 
 				<h3> Shipping Details </h3>
 				<ol>
-					<li><b>Wireless Mouse </b>
+					<li><b>WD 4TB Gaming Drive </b>
 						<ul>
-							<li>Wireless Mouse for Desktops Laptops</li>
-							<li>Qauntity: 5</li>
-							<li>Price: $100.00</li>
-						</ul>
-					<li>256 USB Fash Drives
-						<ul>
-							<li>SanDisk 256GB Ultra Fit USB 3.2 Gen 1 Flash Drive - SDCZ430-256G-GAM46</li>
-							<li>Qauntity: 5</li>
-							<li>Price: $200.00</li>
+							<li>Portable External Hard Drive
+								Expand your PS4 gaming experience, play anywhere Fast and easy, 
+								setup Sleek design with high capacity, 3-year warranty</li>
+							<li>Qauntity: 1</li>
+							<li>Price: $114.00</li>
 						</ul>
 					</li>
 				</ol>
@@ -105,27 +101,24 @@
 						<table style="width:500px">
 							<tr>
 								<td>Items: </td>
-								<td class="dollar">2</td>
+								<td class="dollar">1</td>
 							</tr>
 							<tr>
 								<td>Total before tax: </td>
-								<td class="dollar">$300.00</td>
+								<td class="dollar">$114.00</td>
 							</tr>
 							<tr>
 								<td>GST/HST: </td>
-								<td class="dollar">$39.00</td>
+								<td class="dollar">$14.82</td>
 							</tr>
 							<tr>
 								<th>Order Total:</th>
-								<th class="dollar">$339.00</th>
+								<th class="dollar">$128.82</th>
 							</tr>
 						</table>
 					</li>
 				</ul>
 			</div>
-			<button type="Submit"><b>Submit</b> </button> <br />
-			<a target="_blank" href="index.html">
-				Continue Shopping </a>
 		</main>
 
 		<footer>
